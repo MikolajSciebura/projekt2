@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | ELEKTROPRO Częstochowa</title>
+    <meta name="description" content="Skontaktuj się z profesjonalnym elektrykiem w Częstochowie. Zadzwoń lub napisz – darmowa wycena i szybki dojazd.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">ELEKTRO<span>PRO</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="o-mnie.html">O mnie</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact container">
+            <div class="contact-header">
+                <h1>Kontakt</h1>
+                <p>Potrzebujesz elektryka? Jesteśmy do Twojej dyspozycji 24/7.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Telefon (Najszybszy kontakt)</h3>
+                        <p><a href="tel:+48123456789" class="phone-link">+48 123 456 789</a></p>
+                        <p>Dostępność: 24h / 7 dni w tygodniu</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:kontakt@elektropro-czestochowa.pl">kontakt@elektropro-czestochowa.pl</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Godziny pracy</h3>
+                        <p>Poniedziałek - Piątek: 8:00 - 20:00</p>
+                        <p>Sobota: 9:00 - 15:00</p>
+                        <p><strong>Awarie: 24/7</strong></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Obszar działania</h3>
+                        <p>Częstochowa + 30 km (Kłobuck, Blachownia, Mykanów, Mstów, Poczesna, Konopiska)</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" id="wycena">
+                    <h3>Wyślij wiadomość / Poproś o wycenę</h3>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Imię i Nazwisko</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Numer telefonu</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Rodzaj usługi</label>
+                            <select id="service" name="service">
+                                <option value="awaria">Usuwanie awarii</option>
+                                <option value="instalacja">Nowa instalacja</option>
+                                <option value="pomiary">Pomiary elektryczne</option>
+                                <option value="modernizacja">Modernizacja</option>
+                                <option value="inne">Inne</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Wyślij zgłoszenie</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map container">
+            <div class="map-placeholder">
+                <p>[Mapa Google - Częstochowa i okolice]</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>ELEKTROPRO</h3>
+                <p>Twój zaufany elektryk w Częstochowie.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="uslugi.html">Usługi</a></li>
+                    <li><a href="o-mnie.html">O mnie</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: <a href="tel:+48123456789">+48 123 456 789</a></p>
+                <p>Email: <a href="mailto:kontakt@elektropro-czestochowa.pl">kontakt@elektropro-czestochowa.pl</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ELEKTROPRO Częstochowa. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <div class="sticky-call">
+        <a href="tel:+48123456789">📞 Zadzwoń</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
