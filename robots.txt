@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elektropro-czestochowa.pl/sitemap.xml

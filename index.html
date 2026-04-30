@@ -3,12 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usługi elektryczne Częstochowa – Szybko, Bezpiecznie, 24/7</title>
-    <meta name="description" content="Profesjonalne usługi elektryczne w Częstochowie i okolicach. Instalacje, awarie, pomiary. Dostępność 24/7. Zadzwoń po darmową wycenę!">
+    <title>Elektryk Częstochowa 24h | Usługi Elektryczne Kłobuck | ELEKTROPRO</title>
+    <meta name="description" content="Profesjonalny elektryk Częstochowa i Kłobuck. Pogotowie elektryczne 24h, instalacje elektryczne, pomiary. Darmowa wycena i dojazd w 30 min. Zadzwoń teraz!">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Elektryk Częstochowa 24h | Usługi Elektryczne ELEKTROPRO">
+    <meta property="og:description" content="Szybka pomoc elektryczna w Częstochowie i Kłobucku. Instalacje, awarie, pomiary. Gwarancja jakości i uprawnienia SEP.">
+    <meta property="og:image" content="img/elektryk-czestochowa-og.jpg">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ELEKTROPRO - Elektryk Częstochowa",
+      "image": "img/elektryk-czestochowa.jpg",
+      "@id": "",
+      "url": "https://elektropro-czestochowa.pl",
+      "telephone": "+48123456789",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Najświętszej Maryi Panny",
+        "addressLocality": "Częstochowa",
+        "postalCode": "42-200",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.8118,
+        "longitude": 19.1203
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/elektropro-czestochowa"
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -19,9 +69,13 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Strona Główna</a></li>
                 <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="realizacje.html">Realizacje</a></li>
                 <li><a href="o-mnie.html">O mnie</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
+            <div class="header-contact-info">
+                <a href="tel:+48123456789" class="btn btn-primary">📞 +48 123 456 789</a>
+            </div>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -31,10 +85,19 @@
     </header>
 
     <main>
+        <div class="usp-ribbon">
+            <div class="container usp-grid">
+                <div class="usp-item">✅ Dojazd w 30-60 min</div>
+                <div class="usp-item">✅ Pogotowie 24/7</div>
+                <div class="usp-item">✅ Darmowa wycena</div>
+                <div class="usp-item">✅ Uprawnienia SEP</div>
+            </div>
+        </div>
+
         <section class="hero">
             <div class="container hero-content">
-                <h1>Usługi elektryczne Częstochowa – szybko, bezpiecznie, 24/7</h1>
-                <p>Profesjonalny elektryk z uprawnieniami SEP. Gwarantuję najwyższą jakość usług, szybki czas reakcji i konkurencyjne ceny.</p>
+                <h1>Usługi elektryczne Częstochowa i Kłobuck – Szybko, Bezpiecznie, 24/7</h1>
+                <p>Potrzebny dobry <strong>elektryk w Częstochowie</strong>? Oferuję profesjonalne instalacje elektryczne, szybkie usuwanie awarii oraz rzetelne pomiary. Działam na terenie całego powiatu częstochowskiego i kłobuckiego.</p>
                 <div class="hero-cta">
                     <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń teraz: +48 123 456 789</a>
                     <a href="kontakt.html#wycena" class="btn btn-secondary">Darmowa wycena</a>
@@ -43,104 +106,150 @@
         </section>
 
         <section class="services-preview container">
-            <h2 class="section-title">Najważniejsze usługi</h2>
+            <h2 class="section-title">Profesjonalny Elektryk Częstochowa – Zakres Usług</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Instalacje elektryczne</h3>
-                    <p>Kompleksowe wykonawstwo nowych instalacji w domach i mieszkaniach.</p>
-                    <a href="instalacje-elektryczne.html" class="link">Więcej</a>
+                    <p>Nowoczesne i bezpieczne instalacje elektryczne w domach i mieszkaniach na terenie Częstochowy.</p>
+                    <a href="instalacje-elektryczne.html" class="link">Szczegóły</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3>Usuwanie awarii</h3>
-                    <p>Szybka pomoc przy braku prądu, zwarciach i innych nagłych usterkach.</p>
-                    <a href="usuwanie-awarii.html" class="link">Więcej</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>Modernizacje instalacji</h3>
-                    <p>Wymiana starych przewodów i tablic bezpiecznikowych na nowoczesne systemy.</p>
-                    <a href="modernizacja-instalacji.html" class="link">Więcej</a>
+                    <div class="service-icon">🚨</div>
+                    <h3>Pogotowie elektryczne 24h</h3>
+                    <p>Nagły brak prądu? Moje pogotowie elektryczne w Częstochowie działa przez całą dobę.</p>
+                    <a href="usuwanie-awarii.html" class="link">Szczegóły</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📏</div>
                     <h3>Pomiary elektryczne</h3>
-                    <p>Okresowe przeglądy, pomiary izolacji i skuteczności ochrony.</p>
-                    <a href="pomiary-elektryczne.html" class="link">Więcej</a>
+                    <p>Przeglądy 5-letnie i odbiory instalacji. Pełna dokumentacja dla ubezpieczyciela.</p>
+                    <a href="pomiary-elektryczne.html" class="link">Szczegóły</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🔌</div>
-                    <h3>Podłączanie sprzętu</h3>
-                    <p>Montaż płyt indukcyjnych, piekarników z podbiciem gwarancji.</p>
-                    <a href="uslugi.html" class="link">Więcej</a>
+                    <div class="service-icon">🔄</div>
+                    <h3>Modernizacje</h3>
+                    <p>Wymiana starej instalacji aluminiowej na miedzianą w blokach i kamienicach.</p>
+                    <a href="modernizacja-instalacji.html" class="link">Szczegóły</a>
                 </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="uslugi.html" class="btn btn-secondary">Zobacz wszystkie usługi</a>
             </div>
         </section>
 
-        <section class="why-us bg-light">
+        <section class="how-we-work bg-light">
             <div class="container">
-                <h2 class="section-title">Dlaczego warto?</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <h3>Doświadczenie</h3>
-                        <p>Wieloletnia praktyka w zawodzie pozwala mi rozwiązać każdy problem.</p>
+                <h2 class="section-title">Jak pracuję?</h2>
+                <div class="step-grid">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3>Kontakt i wycena</h3>
+                        <p>Dzwonisz do mnie, opisujesz problem, a ja przygotowuję darmową wycenę przez telefon lub na miejscu.</p>
                     </div>
-                    <div class="feature">
-                        <h3>Uprawnienia SEP</h3>
-                        <p>Posiadam pełne uprawnienia dozoru i eksploatacji.</p>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3>Szybki przyjazd</h3>
+                        <p>Jako lokalny elektryk z Częstochowy, docieram do klienta zazwyczaj w ciągu 30-60 minut od zgłoszenia.</p>
                     </div>
-                    <div class="feature">
-                        <h3>Szybki dojazd</h3>
-                        <p>Działam lokalnie, co skraca czas oczekiwania na wizytę.</p>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3>Realizacja</h3>
+                        <p>Wykonuję usługę czysto, sprawnie i zgodnie z obowiązującymi normami bezpieczeństwa.</p>
                     </div>
-                    <div class="feature">
+                    <div class="step">
+                        <div class="step-number">04</div>
                         <h3>Gwarancja</h3>
-                        <p>Na każdą wykonaną usługę udzielam pisemnej gwarancji.</p>
+                        <p>Na każdą usługę wystawiam rachunek i udzielam pisemnej gwarancji na wykonane prace.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="testimonials container">
-            <h2 class="section-title">Opinie klientów</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p>"Szybka i profesjonalna pomoc przy awarii w niedzielę wieczorem. Polecam każdemu!"</p>
-                    <cite>— Andrzej, Częstochowa</cite>
+        <section class="common-problems container">
+            <h2 class="section-title">Najczęstsze problemy elektryczne</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>Częste wybijanie bezpieczników</h3>
+                    <p>Może to oznaczać przeciążenie obwodu lub uszkodzenie któregoś z urządzeń. Pomogę zdiagnozować przyczynę.</p>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p>"Instalacja w nowym domu wykonana wzorowo. Wszystko zgodnie z projektem i terminem."</p>
-                    <cite>— Marek, Blachownia</cite>
+                <div class="problem-card">
+                    <h3>Iskrzenie w gniazdkach</h3>
+                    <p>Bardzo niebezpieczna sytuacja grożąca pożarem. Wymaga natychmiastowej interwencji elektryka.</p>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p>"Solidny fachowiec, zna się na rzeczy. Pomiary wykonane sprawnie, dokumentacja kompletna."</p>
-                    <cite>— Janina, Kłobuck</cite>
+                <div class="problem-card">
+                    <h3>Brak prądu w części mieszkania</h3>
+                    <p>Zazwyczaj winna jest upalona żyła neutralna lub uszkodzony przewód w puszce rozgałęźnej.</p>
                 </div>
             </div>
         </section>
 
-        <section class="area bg-light">
+        <section class="testimonials">
             <div class="container">
-                <h2 class="section-title">Obszar działania</h2>
-                <div class="area-content">
-                    <p>Działam na terenie <strong>Częstochowy</strong> oraz wszystkich okolicznych miejscowości: Kłobuck, Blachownia, Mykanów, Mstów, Poczesna, Konopiska.</p>
-                    <div class="map-placeholder">
-                        <!-- Tu można wstawić iframe Google Maps -->
-                        <p>[Mapa Google - Częstochowa i okolice]</p>
+                <h2 class="section-title">Opinie zadowolonych klientów</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Szybka reakcja na zgłoszenie awarii. Pan elektryk przyjechał w 40 minut i błyskawicznie naprawił usterkę w rozdzielni. Bardzo profesjonalne podejście i uczciwa cena."</p>
+                        <cite>— Tomasz G., Częstochowa</cite>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Zleciłam wykonanie kompletnej instalacji w nowym domu pod Częstochową. Wszystko wykonane zgodnie z projektem, czysto i terminowo. Polecam każdemu, kto szuka rzetelnego fachowca."</p>
+                        <cite>— Anna M., Blachownia</cite>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Pomiary elektryczne wykonane sprawnie, protokół dostarczony na następny dzień. Widać duże doświadczenie i wiedzę. Na pewno skorzystam ponownie przy modernizacji kuchni."</p>
+                        <cite>— Marek K., Kłobuck</cite>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="faq-section bg-light">
+            <div class="container">
+                <h2 class="section-title">FAQ – Pytania i odpowiedzi</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Ile kosztuje wizyta elektryka w Częstochowie?</h3>
+                        <p>Koszt prostej usługi zaczyna się od 100-150 zł. Zawsze podaję przybliżony koszt przed przystąpieniem do prac.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Czy dojeżdża Pan poza Częstochowę, np. do Kłobucka?</h3>
+                        <p>Tak, działam w całym powiecie częstochowskim i kłobuckim. Dojazd do miejscowości takich jak Kłobuck, Blachownia czy Mykanów jest wliczony w cenę usługi.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Czy posiada Pan uprawnienia SEP?</h3>
+                        <p>Tak, posiadam aktualne uprawnienia SEP w zakresie eksploatacji (E) oraz dozoru (D) wraz z pomiarami.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-text container">
+            <div class="seo-content">
+                <h2>Rzetelne usługi elektryczne – Częstochowa, Kłobuck i okolice</h2>
+                <p>Szukasz sprawdzonego fachowca, który wykona <strong>instalacje elektryczne w Częstochowie</strong>? A może potrzebujesz szybkiej pomocy, bo w Twoim domu zabrakło prądu? Jako doświadczony <strong>elektryk Częstochowa</strong> oferuję kompleksowe wsparcie w zakresie elektryki. Moja firma to gwarancja bezpieczeństwa i profesjonalizmu.</p>
+
+                <p>Działam jako <strong>pogotowie elektryczne Częstochowa</strong>, co oznacza, że jestem dostępny dla moich klientów 24 godziny na dobę, 7 dni w tygodniu. Wiem, jak stresujące mogą być nagłe awarie, dlatego priorytetem jest dla mnie <strong>elektryk 24h Częstochowa</strong>, który przyjedzie na miejsce i szybko usunie usterkę. Obsługuję nie tylko centrum miasta, ale również dzielnice takie jak Raków, Północ, Stradom czy Tysiąclecie.</p>
+
+                <p>Poza usuwaniem awarii, specjalizuję się w montażu nowych systemów. Jeśli interesują Cię nowoczesne <strong>usługi elektryczne Częstochowa</strong>, pomogę Ci od projektu aż po montaż ostatniego gniazdka. Wykonuję również okresowe <strong>pomiary elektryczne Częstochowa</strong>, które są niezbędne do zachowania polisy ubezpieczeniowej domu. Moja oferta to również profesjonalny <strong>elektryk Kłobuck</strong> – dojeżdżam do okolicznych miejscowości, zapewniając ten sam wysoki standard usług.</p>
+
+                <p>Zapraszam do kontaktu telefonicznego. Każde zlecenie traktuję indywidualnie, dbając o porządek w miejscu pracy i pełną satysfakcję klienta. Wybierz <strong>usługi elektryczne Kłobuck</strong> i Częstochowa od specjalisty z uprawnieniami.</p>
+
+                <p>Niezależnie od tego, czy planujesz generalny remont starego mieszkania w kamienicy, czy budujesz nowoczesny dom jednorodzinny, odpowiednio zaprojektowana i wykonana instalacja to klucz do komfortu i bezpieczeństwa Twojej rodziny. Nie ryzykuj pracy z amatorami – wybierz fachowca, który bierze odpowiedzialność za swoje działania i posiada niezbędne certyfikaty SEP. Moje usługi to nie tylko naprawa „tutaj i teraz”, ale przede wszystkim dbałość o to, by instalacja służyła bezawaryjnie przez kolejne dziesięciolecia. Skontaktuj się ze mną już dziś, aby umówić się na bezpłatną wizję lokalną i wycenę prac.</p>
             </div>
         </section>
 
         <section class="cta-section container">
             <div class="cta-card">
-                <h2>Masz problem z instalacją elektryczną?</h2>
-                <p>Zadzwoń teraz i umów się na bezpłatną konsultację.</p>
-                <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń: +48 123 456 789</a>
+                <h2>Masz problem z elektryką? Nie czekaj!</h2>
+                <p>Zadzwoń do mnie teraz. Darmowa wycena i szybki dojazd do 30 minut.</p>
+                <div style="margin-top: 30px;">
+                    <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń: +48 123 456 789</a>
+                    <a href="kontakt.html" class="btn btn-secondary" style="border-color: #fff; color: #fff;">Wyślij wiadomość</a>
+                </div>
             </div>
         </section>
     </main>
@@ -149,19 +258,30 @@
         <div class="container footer-content">
             <div class="footer-info">
                 <h3>ELEKTROPRO</h3>
-                <p>Twój zaufany elektryk w Częstochowie.</p>
+                <p>Twój zaufany elektryk w Częstochowie i Kłobucku. Pogotowie 24/7.</p>
             </div>
             <div class="footer-links">
+                <h4>Nawigacja</h4>
                 <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
                     <li><a href="uslugi.html">Usługi</a></li>
+                    <li><a href="realizacje.html">Realizacje</a></li>
                     <li><a href="o-mnie.html">O mnie</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Lokalizacje</h4>
+                <ul>
+                    <li><a href="elektryk-czestochowa.html">Elektryk Częstochowa</a></li>
+                    <li><a href="elektryk-klobuck.html">Elektryk Kłobuck</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <p>Tel: <a href="tel:+48123456789">+48 123 456 789</a></p>
+                <h4>Kontakt</h4>
+                <p>Tel: <a href="tel:+48123456789"><strong>+48 123 456 789</strong></a></p>
                 <p>Email: <a href="mailto:kontakt@elektropro-czestochowa.pl">kontakt@elektropro-czestochowa.pl</a></p>
+                <p>Adres: Częstochowa i okolice (dojazd do klienta)</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -170,7 +290,7 @@
     </footer>
 
     <div class="sticky-call">
-        <a href="tel:+48123456789">📞 Zadzwoń</a>
+        <a href="tel:+48123456789">📞 Zadzwoń: +48 123 456 789</a>
     </div>
 
     <script src="js/script.js"></script>
