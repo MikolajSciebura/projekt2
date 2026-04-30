@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Simple feedback
             contactForm.innerHTML = `
-                <div class="success-message" style="padding: 40px; text-align: center; background: #f4f4f4; border: 2px solid #000;">
+                <div class="success-message" style="padding: 40px; text-align: center; background: #111; border: 2px solid var(--accent-color); color: #fff;">
                     <h3>Dziękujemy, ${name}!</h3>
                     <p>Twoje zgłoszenie zostało wysłane. Skontaktujemy się z Tobą tak szybko, jak to możliwe.</p>
                 </div>
