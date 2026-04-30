@@ -11,11 +11,12 @@
     {
       "@context": "https://schema.org",
       "@type": "Electrician",
-      "name": "ELEKTROPRO Częstochowa",
-      "image": "https://elektropro.pl/img/logo.png",
-      "@id": "",
+      "name": "ELEKTROPRO – Elektryk Częstochowa",
+      "image": "https://elektropro.pl/img/elektryk-czestochowa.jpg",
+      "@id": "https://elektropro.pl",
       "url": "https://elektropro.pl",
       "telephone": "+48123456789",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Częstochowska 1",
@@ -42,23 +43,44 @@
         "opens": "00:00",
         "closes": "23:59"
       },
-      "areaServed": "Częstochowa i okolice"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Częstochowa"
+        },
+        {
+          "@type": "City",
+          "name": "Kłobuck"
+        },
+        {
+          "@type": "City",
+          "name": "Blachownia"
+        }
+      ],
+      "description": "Profesjonalny elektryk w Częstochowie. Pogotowie elektryczne 24h, pomiary SEP, montaż instalacji i modernizacje. Obsługujemy Częstochowę, Kłobuck i okolice."
     }
     </script>
+    <meta property="og:title" content="ELEKTROPRO | Elektryk Częstochowa | Pogotowie 24/7">
+    <meta property="og:description" content="Szybka pomoc elektryczna 24h w Częstochowie. Instalacje, pomiary, modernizacje.">
+    <meta property="og:image" content="https://elektropro.pl/img/elektryk-czestochowa-og.jpg">
+    <meta property="og:url" content="https://elektropro.pl">
+    <meta property="og:type" content="website">
 </head>
 <body class="no-js">
     <header>
         <nav class="container">
-            <div class="logo">ELEKTROPRO</div>
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">ELEKTROPRO</a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Start</a></li>
                 <li><a href="uslugi.html">Usługi</a></li>
                 <li><a href="o-mnie.html">O firmie</a></li>
                 <li><a href="realizacje.html">Realizacje</a></li>
+                <li><a href="opinie.html">Opinie</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
             <div class="header-btns">
-                <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń teraz</a>
+                <a href="tel:+48123456789" class="btn btn-primary">📞 +48 123 456 789</a>
             </div>
             <div class="burger">
                 <span></span>
@@ -68,12 +90,15 @@
     </header>
 
     <main>
-        <section class="hero container">
-            <h1 class="fade-up">Usługi Elektryczne Częstochowa.</h1>
-            <p class="fade-up">Szybko, bezpiecznie i 24/7. Profesjonalne wsparcie techniczne dla Twojego domu i firmy, gdy liczy się każda minuta.</p>
-            <div class="hero-btns fade-up">
-                <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń: +48 123 456 789</a>
-                <a href="#wycena" class="btn btn-secondary">Darmowa wycena</a>
+        <section class="hero overlay" style="background-image: url('https://placehold.jp/24/121214/ffffff/1920x1080.png?text=Elektryk+Czestochowa+Praca');" role="img" aria-label="Elektryk Częstochowa przy pracy">
+            <div class="container">
+                <h1 class="fade-up">Elektryk Częstochowa – szybka pomoc 24/7</h1>
+                <p class="hero-sub fade-up">Profesjonalne usługi elektryczne, montaż instalacji oraz błyskawiczne pogotowie elektryczne w Częstochowie, Kłobucku i okolicach. Ponad 10 lat doświadczenia i tysiące usuniętych awarii.</p>
+                <a href="tel:+48123456789" class="phone-large fade-up">+48 123 456 789</a>
+                <div class="hero-btns fade-up">
+                    <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń teraz</a>
+                    <a href="#wycena" class="btn btn-secondary">Darmowa wycena</a>
+                </div>
             </div>
         </section>
 
@@ -90,8 +115,8 @@
                     <div style="position:absolute; bottom: -20px; right: -20px; font-size: 8rem; opacity: 0.05;">🔌</div>
                 </div>
                 <div class="bento-item bento-3">
-                    <h3>SEP D+E</h3>
-                    <p>Pełne uprawnienia do dozoru i eksploatacji.</p>
+                    <h3>Certyfikat SEP D+E</h3>
+                    <p>Pełne uprawnienia państwowe do dozoru i eksploatacji instalacji elektrycznych, co gwarantuje pełną legalność prac.</p>
                 </div>
                 <div class="bento-item bento-4">
                     <h3>Pomiary i Audyty</h3>
@@ -116,68 +141,149 @@
 
         <section class="container fade-up" style="margin-bottom: 120px;">
             <div class="section-head" style="margin-bottom: 48px;">
-                <h2>Nasza Oferta</h2>
-                <p class="text-dim">Kompleksowe wsparcie od drobnych napraw po duże inwestycje.</p>
+                <h2>Główne usługi elektryczne</h2>
+                <p class="text-dim">Kompleksowe wsparcie od drobnych napraw po duże inwestycje w Częstochowie i okolicach.</p>
             </div>
             <div class="services-compact">
                 <div class="service-box">
                     <span class="icon">📐</span>
-                    <h3>Pomiary SEP</h3>
-                    <p class="text-dim">Badania okresowe 5-letnie, protokoły i odbiory budynków.</p>
+                    <h3>Pomiary SEP Częstochowa</h3>
+                    <p class="text-dim">Badania okresowe 5-letnie, protokoły i odbiory budynków zgodnie z normami.</p>
+                    <a href="pomiary-elektryczne.html" class="btn btn-secondary" style="margin-top: 15px;">Czytaj więcej</a>
                 </div>
                 <div class="service-box">
                     <span class="icon">⚙️</span>
-                    <h3>Modernizacje</h3>
-                    <p class="text-dim">Wymiana starych tablic bezpiecznikowych i instalacji aluminiowych.</p>
+                    <h3>Modernizacje instalacji</h3>
+                    <p class="text-dim">Wymiana starych tablic bezpiecznikowych i instalacji aluminiowych na miedziane.</p>
+                    <a href="modernizacja-instalacji.html" class="btn btn-secondary" style="margin-top: 15px;">Czytaj więcej</a>
                 </div>
                 <div class="service-box">
                     <span class="icon">💡</span>
-                    <h3>Oświetlenie</h3>
-                    <p class="text-dim">Montaż nowoczesnych systemów LED i sterowania światłem.</p>
+                    <h3>Oświetlenie wewnętrzne</h3>
+                    <p class="text-dim">Montaż nowoczesnych systemów LED, sterowania światłem i inteligentnych łączników.</p>
+                    <a href="uslugi.html" class="btn btn-secondary" style="margin-top: 15px;">Czytaj więcej</a>
                 </div>
                 <div class="service-box">
                     <span class="icon">🏠</span>
-                    <h3>Smart Home</h3>
-                    <p class="text-dim">Inteligentne sterowanie domem, roletami i ogrzewaniem.</p>
+                    <h3>Smart Home i Automatyka</h3>
+                    <p class="text-dim">Inteligentne sterowanie domem, roletami, bramami i ogrzewaniem z aplikacji.</p>
+                    <a href="uslugi.html" class="btn btn-secondary" style="margin-top: 15px;">Czytaj więcej</a>
                 </div>
             </div>
         </section>
 
         <section class="container fade-up" style="margin-bottom: 120px;">
             <div class="section-head" style="margin-bottom: 48px; text-align: center;">
-                <h2>Opinie Klientów</h2>
-                <p class="text-dim">Zaufanie, na które pracujemy każdego dnia.</p>
+                <h2>Zaufali nam mieszkańcy Częstochowy</h2>
+                <p class="text-dim">Opinie naszych klientów to najlepsze potwierdzenie jakości usług elektrycznych ELEKTROPRO.</p>
             </div>
             <div class="services-compact" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                 <div class="bento-item" style="padding: 32px;">
                     <div style="color: #FFD700; margin-bottom: 16px;">★★★★★</div>
-                    <p class="text-dim" style="font-style: italic; margin-bottom: 24px;">"Szybka pomoc przy awarii w niedzielę wieczorem. Pan Jan przyjechał w 20 minut i sprawnie usunął usterkę. Bardzo polecam!"</p>
+                    <p class="text-dim" style="font-style: italic; margin-bottom: 24px;">"Szybka pomoc przy awarii w niedzielę wieczorem. Elektryk przyjechał w 20 minut na Tysiąclecie i sprawnie usunął usterkę. Bardzo polecam pogotowie elektryczne Częstochowa!"</p>
                     <p style="font-weight: 600;">— Marek, Częstochowa</p>
                 </div>
                 <div class="bento-item" style="padding: 32px;">
                     <div style="color: #FFD700; margin-bottom: 16px;">★★★★★</div>
-                    <p class="text-dim" style="font-style: italic; margin-bottom: 24px;">"Profesjonalna wymiana całej instalacji w starym mieszkaniu. Wszystko zgodnie z terminem i czysto. Dokumentacja do pomiarów wzorowa."</p>
-                    <p style="font-weight: 600;">— Anna, dzielnica Północ</p>
+                    <p class="text-dim" style="font-style: italic; margin-bottom: 24px;">"Profesjonalna wymiana całej instalacji w starym mieszkaniu. Wszystko zgodnie z terminem i czysto. Pomiary SEP wykonane rzetelnie, dokumentacja do ubezpieczenia gotowa od ręki."</p>
+                    <p style="font-weight: 600;">— Anna, Częstochowa (Północ)</p>
                 </div>
                 <div class="bento-item" style="padding: 32px;">
                     <div style="color: #FFD700; margin-bottom: 16px;">★★★★★</div>
-                    <p class="text-dim" style="font-style: italic; margin-bottom: 24px;">"Instalacja Smart Home działa bez zarzutu. Świetny kontakt i doradztwo w wyborze osprzętu. Nowoczesne podejście do klienta."</p>
+                    <p class="text-dim" style="font-style: italic; margin-bottom: 24px;">"Szukałem dobrego elektryka w Kłobucku do podłączenia płyty indukcyjnej i montażu gniazdek. Firma ELEKTROPRO wywiązała się z zadania wzorowo. Polecam!"</p>
                     <p style="font-weight: 600;">— Tomasz, Kłobuck</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="opinie.html" class="btn btn-secondary">Zobacz więcej opinii</a>
+            </div>
+        </section>
+
+        <section class="container fade-up" style="margin-bottom: 120px;">
+            <div class="section-head">
+                <h2>Elektryk Częstochowa i okolice – profesjonalne usługi elektryczne</h2>
+                <p class="text-dim">Jeśli szukasz sprawdzonego fachowca, ELEKTROPRO to najlepszy wybór. Realizujemy kompleksowe usługi elektryczne w Częstochowie, dbając o każdy szczegół Twojej instalacji. Nasze pogotowie elektryczne Częstochowa działa 24h na dobę, abyś nigdy nie musiał martwić się nagłą awarią. Jako wykwalifikowany elektryk z wieloletnim stażem, oferuję nie tylko naprawy, ale również projektowanie i montaż nowoczesnych systemów zasilania, oświetlenia oraz automatyki domowej.</p>
+            </div>
+
+            <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 80px;">
+                <div class="bento-item">
+                    <h3 style="margin-bottom: 20px;">Pogotowie elektryczne Częstochowa 24h</h3>
+                    <p class="text-dim">Awaria prądu w środku nocy? Brak zasilania w firmie? Nasz elektryk 24h Częstochowa jest gotowy do akcji. Rozumiemy, jak krytyczne może być nagłe przerwanie dostawy energii, dlatego gwarantujemy szybki dojazd i profesjonalną diagnostykę. Nasze pogotowie to gwarancja usunięcia usterki „od ręki” w większości przypadków.</p>
+                </div>
+                <div class="bento-item">
+                    <h3 style="margin-bottom: 20px;">Działamy również: Kłobuck i okolice</h3>
+                    <p class="text-dim">Swoje usługi kierujemy nie tylko do mieszkańców Częstochowy. Jako elektryk Kłobuck, regularnie odwiedzam klientów w powiecie kłobuckim, oferując ten sam wysoki standard i szybkość reakcji. Niezależnie od tego, czy potrzebujesz nowej instalacji w Kłobucku, czy pomiarów SEP w Blachowni – ELEKTROPRO jest do Twojej dyspozycji.</p>
+                </div>
+            </div>
+
+            <div class="section-head" style="margin-bottom: 48px;">
+                <h2>Obszar Działania i Mapa</h2>
+                <p class="text-dim">Działamy lokalnie, docierając szybko do każdego klienta w Częstochowie i okolicznych miejscowościach.</p>
+            </div>
+            <div style="width: 100%; height: 450px; background: #0A0A0B; border: 1px solid var(--border); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                <div style="text-align: center; z-index: 1; padding: 40px;">
+                    <h3 style="margin-bottom: 12px;">Obsługujemy: Częstochowa, Kłobuck, Blachownia, Mykanów, Mstów</h3>
+                    <p class="text-dim" style="max-width: 600px; margin: 0 auto;">Dojazd do klienta na terenie Częstochowy i powiatu kłobuckiego jest zawsze wliczony w cenę usługi przy jej realizacji. Zadzwoń i zapytaj o wolny termin!</p>
+                </div>
+                <div style="position: absolute; width: 100%; height: 100%; opacity: 0.1; background: url('https://placehold.jp/100/121214/ffffff/1200x450.png?text=Interaktywna+Mapa+Uslug') center/cover;"></div>
+            </div>
+        </section>
+
+        <section class="container fade-up" style="margin-bottom: 120px;">
+            <div class="section-head">
+                <h2>Jak pracuję? (Proces realizacji)</h2>
+                <p class="text-dim">Przejrzystość i profesjonalizm na każdym etapie zlecenia.</p>
+            </div>
+            <div class="services-compact" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="service-box">
+                    <span style="font-size: 2rem; color: #fff; margin-bottom: 20px; display: block;">01.</span>
+                    <h3>Kontakt i Wycena</h3>
+                    <p class="text-dim">Dzwonisz do nas, opisujesz problem lub planowaną inwestycję. Wstępną wycenę podajemy już podczas rozmowy lub po oględzinach na miejscu.</p>
+                </div>
+                <div class="service-box">
+                    <span style="font-size: 2rem; color: #fff; margin-bottom: 20px; display: block;">02.</span>
+                    <h3>Realizacja</h3>
+                    <p class="text-dim">W ustalonym terminie zjawiamy się u Ciebie z niezbędnym sprzętem i materiałami. Pracujemy sprawnie, dbając o porządek i Twoją wygodę.</p>
+                </div>
+                <div class="service-box">
+                    <span style="font-size: 2rem; color: #fff; margin-bottom: 20px; display: block;">03.</span>
+                    <h3>Pomiary i Odbiór</h3>
+                    <p class="text-dim">Po zakończeniu prac wykonujemy pomiary sprawdzające poprawność instalacji. Otrzymujesz protokół oraz gwarancję na wykonaną usługę.</p>
                 </div>
             </div>
         </section>
 
         <section class="container fade-up" style="margin-bottom: 120px;">
-            <div class="section-head" style="margin-bottom: 48px; text-align: center;">
-                <h2>Obszar Działania</h2>
-                <p class="text-dim">Działamy lokalnie, docierając szybko do każdego klienta.</p>
-            </div>
-            <div style="width: 100%; height: 350px; background: #0A0A0B; border: 1px solid var(--border); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                <div style="text-align: center; z-index: 1;">
-                    <h3 style="margin-bottom: 12px;">Częstochowa i okolice (do 50km)</h3>
-                    <p class="text-dim">Dojazd do klienta w cenie usługi.</p>
+            <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+                <div>
+                    <h2 style="margin-bottom: 32px;">Najczęstsze problemy elektryczne</h2>
+                    <p class="text-dim mb-20">Nie ignoruj sygnałów ostrzegawczych. Jeśli zauważysz poniższe objawy, skontaktuj się z nami jak najszybciej:</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: #fff;">⚠</span> Swąd spalenizny z gniazdek lub tablicy bezpiecznikowej.
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: #fff;">⚠</span> Częste „wybijanie” bezpieczników bez wyraźnego powodu.
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: #fff;">⚠</span> Migotanie świateł przy włączaniu innych urządzeń (np. czajnika).
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px;">
+                            <span style="color: #fff;">⚠</span> Iskrzenie w gniazdkach lub łącznikach światła.
+                        </li>
+                    </ul>
                 </div>
-                <div style="position: absolute; width: 100%; height: 100%; opacity: 0.1; background: url('https://placehold.jp/100/121214/ffffff/1200x350.png?text=Mapa+Czestochowa') center/cover;"></div>
+                <div>
+                    <h2 style="margin-bottom: 32px;">FAQ – Najczęstsze pytania</h2>
+                    <div class="bento-item" style="padding: 24px; margin-bottom: 16px;">
+                        <h4 style="margin-bottom: 10px;">Ile kosztuje dojazd elektryka w Częstochowie?</h4>
+                        <p class="text-dim" style="font-size: 0.95rem;">Dojazd na terenie miasta jest bezpłatny w przypadku realizacji zlecenia. Koszt samej diagnozy bez naprawy ustalamy indywidualnie.</p>
+                    </div>
+                    <div class="bento-item" style="padding: 24px;">
+                        <h4 style="margin-bottom: 10px;">Czy wystawiacie protokoły do ubezpieczenia?</h4>
+                        <p class="text-dim" style="font-size: 0.95rem;">Tak, posiadamy pełne uprawnienia SEP D+E, co pozwala nam wystawiać dokumenty honorowane przez firmy ubezpieczeniowe i nadzór budowlany.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -222,31 +328,38 @@
             <div class="footer-grid">
                 <div>
                     <div class="logo" style="margin-bottom: 24px;">ELEKTROPRO</div>
-                    <p class="text-dim" style="max-width: 300px;">Twój zaufany partner w dziedzinie nowoczesnej elektryki. Działamy w Częstochowie i okolicach 24/7.</p>
+                    <p class="text-dim" style="max-width: 300px;">Twój zaufany partner w dziedzinie nowoczesnej elektryki. Działamy w Częstochowie, Kłobucku i okolicach 24/7.</p>
                 </div>
                 <div>
                     <h4 style="margin-bottom: 24px;">Nawigacja</h4>
                     <ul style="list-style: none;" class="nav-links-footer">
                         <li style="margin-bottom: 12px;"><a href="index.html" class="text-dim">Start</a></li>
-                        <li style="margin-bottom: 12px;"><a href="uslugi.html" class="text-dim">Usługi</a></li>
-                        <li style="margin-bottom: 12px;"><a href="kontakt.html" class="text-dim">Kontakt</a></li>
+                        <li><a href="uslugi.html" class="text-dim">Usługi</a></li>
+                        <li><a href="o-mnie.html" class="text-dim">O firmie</a></li>
+                        <li><a href="realizacje.html" class="text-dim">Realizacje</a></li>
+                        <li><a href="opinie.html" class="text-dim">Opinie</a></li>
+                        <li><a href="kontakt.html" class="text-dim">Kontakt</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 24px;">Kontakt</h4>
-                    <p class="text-dim" style="margin-bottom: 12px;">+48 123 456 789</p>
-                    <p class="text-dim">kontakt@elektropro.pl</p>
+                    <h4 style="margin-bottom: 24px;">Kontakt 24/7</h4>
+                    <p class="text-dim" style="margin-bottom: 12px; font-weight: 700; color: #fff;">📞 +48 123 456 789</p>
+                    <p class="text-dim">✉️ kontakt@elektropro.pl</p>
+                    <p class="text-dim" style="margin-top: 12px;">📍 Częstochowa i okolice</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 ELEKTROPRO Częstochowa. Wszystkie prawa zastrzeżone.</p>
-                <a href="polityka-prywatnosci.html" class="text-dim">Polityka Prywatności</a>
+                <div style="display: flex; gap: 20px;">
+                    <a href="polityka-prywatnosci.html" class="text-dim">Polityka Prywatności</a>
+                    <a href="sitemap.xml" class="text-dim">Mapa Strony</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <div class="sticky-cta">
-        <a href="tel:+48123456789" class="btn btn-primary">📞 Zadzwoń</a>
+        <a href="tel:+48123456789" class="btn btn-primary">📞 Zadzwoń teraz</a>
     </div>
 
     <script src="js/script.js"></script>
