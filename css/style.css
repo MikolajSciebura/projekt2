@@ -1,14 +1,14 @@
 /* Base Styles & Reset */
 :root {
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
     --accent-color: #FFD700; /* Yellow accent for CTAs */
     --accent-hover: #e6c200;
-    --bg-light: #ffffff;
-    --bg-gray: #f4f4f4;
-    --bg-dark: #111111;
-    --text-color: #111111;
-    --text-muted: #555555;
+    --bg-light: #000000;
+    --bg-gray: #111111;
+    --bg-dark: #000000;
+    --text-color: #ffffff;
+    --text-muted: #aaaaaa;
     --text-light: #ffffff;
     --max-width: 1200px;
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -151,10 +151,11 @@ p { margin-bottom: 20px; }
 /* Header & Navigation */
 header {
     background-color: var(--secondary-color);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 20px rgba(255,255,255,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #222;
 }
 
 nav {
@@ -171,8 +172,8 @@ nav {
 }
 
 .logo span {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    color: #000;
     padding: 2px 6px;
     margin-left: 2px;
 }
@@ -233,7 +234,7 @@ nav {
     background-position: center;
     position: relative;
     overflow: hidden;
-    background-color: var(--primary-color);
+    background-color: #000;
 }
 
 .hero.overlay::before {
@@ -243,7 +244,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -308,8 +309,8 @@ nav {
 
 .service-card {
     padding: 50px 40px;
-    background: var(--secondary-color);
-    border: 1px solid #eee;
+    background: #0a0a0a;
+    border: 1px solid #222;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -318,7 +319,7 @@ nav {
 .service-card:hover {
     border-color: var(--accent-color);
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
 .service-icon {
@@ -350,9 +351,9 @@ nav {
 
 .step, .problem-card {
     padding: 40px;
-    background: var(--secondary-color);
+    background: #0a0a0a;
     border-left: 8px solid var(--accent-color);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .step-number {
@@ -373,8 +374,8 @@ nav {
 
 .testimonial {
     padding: 40px;
-    background: var(--secondary-color);
-    border: 1px solid #eee;
+    background: #0a0a0a;
+    border: 1px solid #222;
     position: relative;
 }
 
@@ -392,8 +393,8 @@ nav {
 
 .faq-item {
     margin-bottom: 20px;
-    border: 1px solid #eee;
-    background: var(--secondary-color);
+    border: 1px solid #222;
+    background: #0a0a0a;
 }
 
 .faq-question {
@@ -457,11 +458,12 @@ nav {
 
 .form-group input, .form-group textarea, .form-group select {
     padding: 15px;
-    border: 2px solid #eee;
+    border: 2px solid #333;
     font-family: inherit;
     font-size: 1rem;
     transition: var(--transition);
-    background-color: #fff;
+    background-color: #111;
+    color: #fff;
 }
 
 .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
@@ -607,13 +609,13 @@ nav {
 }
 
 .blog-card {
-    background: var(--bg-light);
-    border: 1px solid #eee;
+    background: #0a0a0a;
+    border: 1px solid #222;
     transition: var(--transition);
 }
 
 .blog-card:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     border-color: var(--accent-color);
 }
 
@@ -754,15 +756,17 @@ aside {
 
 /* CTA Card */
 .cta-card {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: #111;
+    color: var(--primary-color);
     padding: 80px 40px;
     text-align: center;
+    border: 1px solid #222;
 }
 
 .cta-card.accent {
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: #000;
+    border: none;
 }
 
 .cta-card h2 {
@@ -800,7 +804,7 @@ footer h3 {
 }
 
 .footer-bottom {
-    border-top: 1px solid #222;
+    border-top: 1px solid #111;
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
