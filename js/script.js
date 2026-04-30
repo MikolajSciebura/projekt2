@@ -1,92 +1,66 @@
 document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('no-js');
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Mobile Menu Toggle
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
 
-    // Toggle Nav
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-
-        // Animate Links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-            }
+    if (burger) {
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            // Transform burger to X
+            burger.classList.toggle('toggle');
         });
+    }
 
-        // Burger Animation
-        burger.classList.toggle('toggle');
+    // Header scroll effect
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.style.background = 'rgba(0, 0, 0, 0.95)';
+            header.style.padding = '8px 0';
+        } else {
+            header.style.background = 'rgba(0, 0, 0, 0.8)';
+            header.style.padding = '0';
+        }
     });
 
-    // Close menu when clicking on a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('nav-active');
-            burger.classList.remove('toggle');
-            navLinks.forEach(l => l.style.animation = '');
-        });
-    });
-
-    // Smooth Scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    // Simple form feedback
+    const form = document.querySelector('form');
+    if (form) {
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Wysyłanie...';
+            btn.disabled = true;
 
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-    // Form submission handling (preventing default for demo)
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-
-            // Simple feedback
-            contactForm.innerHTML = `
-                <div class="success-message" style="padding: 40px; text-align: center; background: #111; border: 2px solid var(--accent-color); color: #fff;">
-                    <h3>Dziękujemy, ${name}!</h3>
-                    <p>Twoje zgłoszenie zostało wysłane. Skontaktujemy się z Tobą tak szybko, jak to możliwe.</p>
-                </div>
-            `;
+            setTimeout(() => {
+                btn.innerText = 'Wysłano pomyślnie!';
+                btn.style.background = '#00ff00';
+                btn.style.color = '#000';
+                form.reset();
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.background = '#fff';
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
         });
     }
 });
-
-// Keyframes for JS animations
-const style = document.createElement('style');
-style.innerHTML = `
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-    opacity: 0;
-}
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-`;
-document.head.appendChild(style);

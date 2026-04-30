@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | Elektryk Częstochowa 24h | ELEKTROPRO</title>
-    <meta name="description" content="Skontaktuj się z profesjonalnym elektrykiem w Częstochowie. Szybka wycena, pomoc 24/7. Zadzwoń pod +48 123 456 789 lub wyślij wiadomość przez formularz.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <title>Kontakt | ELEKTROPRO Częstochowa</title>
+    <meta name="description" content="Masz awarię? Potrzebujesz wyceny? Skontaktuj się z ELEKTROPRO. Działamy 24/7 w Częstochowie i okolicach.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
-<body>
+<body class="no-js">
     <header>
         <nav class="container">
-            <div class="logo">ELEKTRO<span>PRO</span></div>
+            <div class="logo">ELEKTROPRO</div>
             <ul class="nav-links">
                 <li><a href="index.html">Start</a></li>
                 <li><a href="uslugi.html">Usługi</a></li>
@@ -19,130 +19,120 @@
                 <li><a href="realizacje.html">Realizacje</a></li>
                 <li><a href="kontakt.html" class="active">Kontakt</a></li>
             </ul>
-            <a href="tel:+48123456789" class="btn">Zadzwoń teraz</a>
+            <div class="header-btns">
+                <a href="tel:+48123456789" class="btn btn-primary">Zadzwoń teraz</a>
+            </div>
             <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero overlay" style="background-image: url('https://placehold.jp/1920x600.png?text=Kontakt+ELEKTROPRO'); height: 50vh;">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Kontakt</h1>
-                    <p>Masz awarię? Potrzebujesz wyceny instalacji? Jesteśmy do Twojej dyspozycji 24/7 w Częstochowie i okolicach.</p>
+        <section class="hero container">
+            <h1 class="fade-up">Zostańmy w Kontakcie.</h1>
+            <p class="fade-up">Dostępni 24/7 dla Twojego bezpieczeństwa. Zadzwoń lub wypełnij formularz, a oddzwonimy z wyceną.</p>
+        </section>
+
+        <section class="container fade-up" style="margin-bottom: 120px;">
+            <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+                <div>
+                    <div class="bento-item" style="margin-bottom: 32px; border-color: rgba(255,255,255,0.1);">
+                        <h3 style="margin-bottom: 16px;">Dane Kontaktowe</h3>
+                        <p class="text-dim mb-20" style="font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
+                            <span style="font-size: 1.5rem;">📞</span> +48 123 456 789
+                        </p>
+                        <p class="text-dim mb-20" style="font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
+                            <span style="font-size: 1.5rem;">✉️</span> kontakt@elektropro.pl
+                        </p>
+                        <p class="text-dim mb-20" style="font-size: 1.1rem; display: flex; align-items: center; gap: 12px;">
+                            <span style="font-size: 1.5rem;">📍</span> Częstochowa, Polska
+                        </p>
+                    </div>
+
+                    <div class="bento-item" style="border-color: rgba(255,255,255,0.1);">
+                        <h3 style="margin-bottom: 16px;">Godziny Pracy</h3>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Poniedziałek - Piątek</span>
+                            <span class="text-dim">07:00 - 20:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span>Sobota</span>
+                            <span class="text-dim">09:00 - 15:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                            <span>Pogotowie Awaryjne</span>
+                            <span style="color: #fff; font-weight: bold;">24 / 7 / 365</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <h3 style="margin-bottom: 24px;">Wyślij wiadomość</h3>
+                    <form action="#">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                            <input type="text" placeholder="Imię" required style="margin-bottom: 0;">
+                            <input type="email" placeholder="Email" required style="margin-bottom: 0;">
+                        </div>
+                        <input type="tel" placeholder="Numer telefonu" required>
+                        <select>
+                            <option>Wybierz temat</option>
+                            <option>Nagła awaria</option>
+                            <option>Nowa instalacja</option>
+                            <option>Pomiary i przegląd</option>
+                            <option>Inne</option>
+                        </select>
+                        <textarea placeholder="W czym możemy pomóc?" rows="6"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Wyślij wiadomość</button>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <div class="section-title">
-                            <h2>Dane kontaktowe</h2>
-                            <div class="underline"></div>
-                        </div>
-                        <div class="mb-20">
-                            <h3 class="text-yellow">Zadzwoń do nas:</h3>
-                            <p style="font-size: 2rem; font-weight: 900;"><a href="tel:+48123456789">+48 123 456 789</a></p>
-                            <p>(Najszybsza forma kontaktu w przypadku awarii)</p>
-                        </div>
-                        <div class="mb-20">
-                            <h3 class="text-yellow">E-mail:</h3>
-                            <p>kontakt@elektropro.pl</p>
-                        </div>
-                        <div class="mb-20">
-                            <h3 class="text-yellow">Obszar działania:</h3>
-                            <p>Częstochowa, Kłobuck, Blachownia oraz cały powiat częstochowski.</p>
-                        </div>
-                        <div class="mb-20">
-                            <h3 class="text-yellow">Godziny pracy:</h3>
-                            <p>🆘 Pogotowie: <strong>24h / 7 dni w tygodniu</strong></p>
-                            <p>📅 Usługi planowane: Pon-Pt 8:00 - 18:00</p>
-                        </div>
+        <section class="container fade-up" style="margin-bottom: 150px;">
+            <div style="width: 100%; height: 450px; background: #111; border-radius: 24px; overflow: hidden; border: 1px solid #1a1a1a;">
+                <!-- Tutaj powinna być mapa, używamy placeholderu dla czystości kodu -->
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #333; font-size: 1.2rem; text-align: center; padding: 40px;">
+                    <div>
+                        <p style="margin-bottom: 20px;">[ Interaktywna Mapa Google: Częstochowa i okolice ]</p>
+                        <p class="text-dim" style="font-size: 0.9rem;">Działamy w promieniu 50km od centrum Częstochowy.</p>
                     </div>
-
-                    <div class="contact-form bg-gray" style="padding: 40px; border: 2px solid var(--primary);">
-                        <div class="section-title">
-                            <h2>Napisz do nas</h2>
-                            <div class="underline"></div>
-                        </div>
-                        <form action="#" method="POST">
-                            <div class="form-group">
-                                <label for="name">Imię i nazwisko</label>
-                                <input type="text" id="name" name="name" required placeholder="np. Jan Kowalski">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Numer telefonu</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="np. 500 600 700">
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Rodzaj usługi</label>
-                                <select id="service" name="service">
-                                    <option value="awaria">Nagła awaria / Pogotowie</option>
-                                    <option value="instalacja">Nowa instalacja</option>
-                                    <option value="pomiary">Pomiary elektryczne</option>
-                                    <option value="modernizacja">Modernizacja instalacji</option>
-                                    <option value="inne">Inne</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Opisz problem</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Krótki opis zlecenia..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-block" style="width: 100%;">Wyślij zgłoszenie</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-yellow">
-            <div class="container">
-                <div class="section-title" style="text-align: center;">
-                    <h2>Mapa dojazdu</h2>
-                    <div class="underline" style="margin: 10px auto;"></div>
-                </div>
-                <div class="map-container" style="border: 5px solid #000;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d80518.73041936384!2d19.06648058223631!3d50.8088461741639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5c196909477%3A0x628042407d570530!2zQ3rEmXN0b2Nob3dh!5e0!3m2!1spl!2spl!4v1716382000000!5m2!1spl!2spl" width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container footer-content">
-            <div>
-                <div class="logo mb-20">ELEKTRO<span>PRO</span></div>
-                <p>Twoje zaufane usługi elektryczne w Częstochowie, Kłobucku i okolicach. Jesteśmy do Twojej dyspozycji 24/7.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom: 24px;">ELEKTROPRO</div>
+                    <p class="text-dim" style="max-width: 300px;">Twój zaufany partner w dziedzinie nowoczesnej elektryki. Działamy w Częstochowie i okolicach 24/7.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 24px;">Nawigacja</h4>
+                    <ul style="list-style: none;" class="nav-links-footer">
+                        <li style="margin-bottom: 12px;"><a href="index.html" class="text-dim">Start</a></li>
+                        <li style="margin-bottom: 12px;"><a href="uslugi.html" class="text-dim">Usługi</a></li>
+                        <li style="margin-bottom: 12px;"><a href="kontakt.html" class="text-dim">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 24px;">Kontakt</h4>
+                    <p class="text-dim" style="margin-bottom: 12px;">+48 123 456 789</p>
+                    <p class="text-dim">kontakt@elektropro.pl</p>
+                </div>
             </div>
-            <div>
-                <h3 class="mb-20">Menu</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Start</a></li>
-                    <li><a href="uslugi.html">Usługi</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="polityka-prywatnosci.html">Prywatność</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ELEKTROPRO Częstochowa. Wszystkie prawa zastrzeżone.</p>
+                <a href="polityka-prywatnosci.html" class="text-dim">Polityka Prywatności</a>
             </div>
-            <div>
-                <h3 class="mb-20">Kontakt</h3>
-                <p>Telefon: <strong>+48 123 456 789</strong></p>
-                <p>Email: kontakt@elektropro.pl</p>
-                <p>Lokalizacja: Częstochowa i okolice</p>
-            </div>
-        </div>
-        <div class="container" style="text-align: center; border-top: 1px solid #222; padding-top: 30px; color: #555;">
-            &copy; 2024 ELEKTROPRO Częstochowa. Wszelkie prawa zastrzeżone.
         </div>
     </footer>
 
-    <div class="sticky-call">
-        <a href="tel:+48123456789">📞 ZADZWOŃ TERAZ: +48 123 456 789</a>
+    <div class="sticky-cta">
+        <a href="tel:+48123456789" class="btn btn-primary">📞 Zadzwoń</a>
     </div>
 
     <script src="js/script.js"></script>
