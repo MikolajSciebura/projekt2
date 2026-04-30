@@ -1,66 +1,47 @@
+// Premium Navigation and Scroll Effects
 document.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('no-js');
-    // Intersection Observer for fade-up animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-    // Mobile Menu Toggle
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    if (burger) {
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            // Transform burger to X
-            burger.classList.toggle('toggle');
-        });
-    }
-
-    // Header scroll effect
     const header = document.querySelector('header');
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links li');
+
+    // Scroll Effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.style.background = 'rgba(0, 0, 0, 0.95)';
-            header.style.padding = '8px 0';
+            header.classList.add('scrolled');
         } else {
-            header.style.background = 'rgba(0, 0, 0, 0.8)';
-            header.style.padding = '0';
+            header.classList.remove('scrolled');
         }
     });
 
-    // Simple form feedback
-    const form = document.querySelector('form');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'Wysyłanie...';
-            btn.disabled = true;
+    // Mobile Menu Toggle
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
 
-            setTimeout(() => {
-                btn.innerText = 'Wysłano pomyślnie!';
-                btn.style.background = '#00ff00';
-                btn.style.color = '#000';
-                form.reset();
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.style.background = '#fff';
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
+        // Animate links
+        links.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
         });
-    }
+    });
+
+    // Reveal on Scroll
+    const reveal = () => {
+        const reveals = document.querySelectorAll('.fade-up');
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add('visible');
+            }
+        }
+    };
+
+    window.addEventListener('scroll', reveal);
+    reveal(); // Initial check
 });
