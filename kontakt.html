@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt | Elektryk Częstochowa 24h | ELEKTROPRO</title>
-    <meta name="description" content="Skontaktuj się z profesjonalnym elektrykiem w Częstochowie. Zadzwoń po darmową wycenę lub wezwij pogotowie elektryczne 24h. Szybki dojazd!">
+    <meta name="description" content="Skontaktuj się z profesjonalnym elektrykiem w Częstochowie. Szybka wycena, pomoc 24/7. Zadzwoń pod +48 123 456 789 lub wyślij wiadomość przez formularz.">
+    <meta property="og:title" content="Kontakt | Elektryk Częstochowa 24h | ELEKTROPRO">
+    <meta property="og:description" content="Skontaktuj się z profesjonalnym elektrykiem w Częstochowie. Szybka wycena, pomoc 24/7. Zadzwoń pod +48 123 456 789 lub wyślij wiadomość przez formularz.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.jp/40/000000/ffffff/1200x630.png?text=ELEKTROPRO">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +25,13 @@
                 <li><a href="uslugi.html">Usługi</a></li>
                 <li><a href="realizacje.html">Realizacje</a></li>
                 <li><a href="o-mnie.html">O mnie</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="opinie.html">Opinie</a></li>
                 <li><a href="kontakt.html" class="active">Kontakt</a></li>
             </ul>
+            <div class="header-cta-nav">
+                <a href="tel:+48123456789" class="btn btn-primary">📞 +48 123 456 789</a>
+            </div>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -32,66 +41,78 @@
     </header>
 
     <main>
-        <section class="contact container">
-            <div class="contact-header">
-                <h1>Kontakt z Elektrykiem</h1>
-                <p>Potrzebujesz szybkiej pomocy lub wyceny instalacji? Jestem do Twojej dyspozycji 24/7 na terenie Częstochowy, Kłobucka i okolic.</p>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Masz awarię? Potrzebujesz wyceny instalacji? Jestem do Twojej dyspozycji 24/7.</p>
             </div>
+        </section>
 
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Telefon (Najszybszy kontakt)</h3>
-                        <p><a href="tel:+48123456789" class="phone-link" style="color: var(--primary-color); border-bottom: 5px solid var(--accent-color);">+48 123 456 789</a></p>
-                        <p><strong>Awarie i pogotowie elektryczne:</strong> Dostępne 24h / 7 dni w tygodniu.</p>
+        <section class="bg-light contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Dane kontaktowe</h2>
+                        <div class="contact-item">
+                            <p>Zadzwoń do nas (najszybszy kontakt):</p>
+                            <a href="tel:+48123456789" class="phone-link">+48 123 456 789</a>
+                        </div>
+                        <div class="contact-item">
+                            <p>Napisz e-mail:</p>
+                            <p><strong>kontakt@elektropro-czestochowa.pl</strong></p>
+                        </div>
+                        <div class="contact-item">
+                            <p>Obszar działania:</p>
+                            <p><strong>Częstochowa, Kłobuck, Blachownia</strong> oraz cały powiat częstochowski.</p>
+                        </div>
+                        <div class="contact-item">
+                            <p>Godziny pracy:</p>
+                            <p>Pogotowie elektryczne: <strong>24/7</strong><br>
+                               Usługi planowane: Pon - Pt 8:00 - 18:00</p>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:kontakt@elektropro-czestochowa.pl">kontakt@elektropro-czestochowa.pl</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Lokalizacja i obszar działania</h3>
-                        <p>Moja siedziba znajduje się w Częstochowie, ale działam mobilnie. Dojeżdżam do klientów w miastach i okolicach: <strong>Częstochowa, Kłobuck, Blachownia, Mykanów, Mstów, Poczesna, Konopiska</strong>.</p>
-                    </div>
-                </div>
 
-                <div class="contact-form-wrapper" id="wycena">
-                    <h3>Wyślij zapytanie / Poproś o darmową wycenę</h3>
-                    <form action="#" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Imię i Nazwisko</label>
-                            <input type="text" id="name" name="name" placeholder="np. Jan Kowalski" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Numer telefonu</label>
-                            <input type="tel" id="phone" name="phone" placeholder="np. 500 000 000" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Interesuje mnie:</label>
-                            <select id="service" name="service">
-                                <option value="awaria">Nagła awaria (Pogotowie 24h)</option>
-                                <option value="instalacja">Nowa instalacja elektryczna</option>
-                                <option value="pomiary">Pomiary i przegląd 5-letni</option>
-                                <option value="modernizacja">Modernizacja / Wymiana rozdzielnicy</option>
-                                <option value="indukcja">Podłączenie płyty indukcyjnej</option>
-                                <option value="inne">Inna usługa</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Opis problemu / Miejsce zlecenia</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Opisz krótko czego potrzebujesz..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Wyślij zgłoszenie – Oddzwonię!</button>
-                    </form>
+                    <div class="contact-form" id="wycena">
+                        <h2>Wyślij wiadomość</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Imię i nazwisko</label>
+                                <input type="text" id="name" name="name" required placeholder="np. Jan Kowalski">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Numer telefonu</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="np. 500 600 700">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Rodzaj usługi</label>
+                                <select id="service" name="service">
+                                    <option value="awaria">Nagła awaria / Pogotowie</option>
+                                    <option value="instalacja">Nowa instalacja</option>
+                                    <option value="pomiary">Pomiary elektryczne</option>
+                                    <option value="modernizacja">Modernizacja instalacji</option>
+                                    <option value="inne">Inne</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Treść wiadomości / Opis problemu</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Opisz krótko swój problem lub zapytanie..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Wyślij zgłoszenie</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="map container">
-            <h2 class="section-title">Znajdź mnie na mapie</h2>
-            <div class="map-placeholder" style="border: 4px solid var(--primary-color);">
-                <!-- Embed Google Maps iframe here -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m12!1m12!1m3!1d80517.15174306359!2d19.043513682974412!3d50.811800269382125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5c00e572007%3A0xc48c0358a74e5033!2zQ3rEmXN0b2Nob3dh!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="bg-gray">
+            <div class="container">
+                <h2 class="section-title">Obszar działania</h2>
+                <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 40px;">
+                    <p>Docieramy do klientów w całej Częstochowie (Raków, Północ, Tysiąclecie, Stradom, Gnaszyn) oraz do okolicznych miejscowości: Kłobuck, Blachownia, Mykanów, Mstów, Olsztyn, Konopiska.</p>
+                </div>
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d80518.73041936384!2d19.06648058223631!3d50.8088461741639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b5c196909477%3A0x628042407d570530!2zQ3rEmXN0b2Nob3dh!5e0!3m2!1spl!2spl!4v1716382000000!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -99,22 +120,26 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-info">
-                <h3>ELEKTROPRO</h3>
+                <h3 class="logo" style="color:#fff">ELEKTRO<span>PRO</span></h3>
                 <p>Twój zaufany elektryk w Częstochowie i Kłobucku. Pogotowie 24/7.</p>
             </div>
             <div class="footer-links">
-                <ul>
-                    <li><a href="uslugi.html">Usługi</a></li>
-                    <li><a href="o-mnie.html">O mnie</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
+                <h3>Nawigacja</h3>
+                <a href="index.html">Strona Główna</a>
+                <a href="uslugi.html">Usługi</a>
+                <a href="realizacje.html">Realizacje</a>
+                <a href="o-mnie.html">O mnie</a>
+                <a href="blog.html">Blog</a>
+                <a href="opinie.html">Opinie</a>
+                <a href="kontakt.html">Kontakt</a>
             </div>
-            <div class="footer-contact">
-                <p>Tel: <a href="tel:+48123456789"><strong>+48 123 456 789</strong></a></p>
-                <p>Email: <a href="mailto:kontakt@elektropro-czestochowa.pl">kontakt@elektropro-czestochowa.pl</a></p>
+            <div class="footer-links">
+                <h3>Kontakt</h3>
+                <p>Tel: <strong>+48 123 456 789</strong></p>
+                <p>Email: kontakt@elektropro-czestochowa.pl</p>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="container footer-bottom">
             <p>&copy; 2024 ELEKTROPRO Częstochowa. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
